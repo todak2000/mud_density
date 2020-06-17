@@ -1,0 +1,168 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'montserrat', sans-serif!important;
+}
+
+.main-page, .side-bar, .main-bar {
+    height: 100vh; 
+}
+
+.side-bar {
+    background-color: #2079ce;
+    width: 150px;
+}
+
+.main-bar {
+    background-color: #f9f9f9;
+    width: calc(100% - 150px);
+}
+
+.motto {
+    color: #2079ce!important;
+    font-size: 1.15rem;
+    font-weight: 450;
+}
+
+.side-ul {
+    list-style:none;
+    margin-top:15px;
+    margin-left: -35px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.side-ul > a > li {
+    height: 120px;
+    width: 150px;
+    /* background-color: #f9f9f935; */
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top:25px;
+}
+
+.active {
+    background-color: #f9f9f935;
+}
+
+.t-head {
+    background-color: #2079ce20;
+    font-weight:200!important;
+    text-align: center;
+}
+
+.table-row {
+    padding:2%;
+    text-align: center; 
+    width: 60%;
+    margin-left:20%!important;
+}
+
+.calculate-row {
+    padding:2%;
+    text-align: center; 
+    width: 50%;
+    margin-left:25%!important;
+}
+
+.table thead th {
+    font-weight: 400!important;
+    font-size: 0.85rem;
+}
+
+.mb-51{
+    margin-top: 5rem!important;
+}
+
+.solve {
+    height: 50vh;
+    /* background-color: burlywood; */
+}
+
+.solution {
+    height: 50vh;
+    /* background-color: rgb(150, 222, 135); */
+}
+
+.input-water {
+    height: 50px!important;
+    background-color: #2079ce20!important;
+    border: 0 1px 0 0 !important;
+}
+
+.input-water-solution {
+    height: 70px!important;
+    background-color: #2079ce20!important;
+    border: 0 1px 0 0 !important;
+    font-size: 2.5rem!important;
+}
+
+.input-group {
+    height: 50px!important;
+    border: 0!important;
+}
+.input-group-text {
+    border: 0!important;
+}
+.label{
+    height:50px!important;
+    background-color: transparent!important;
+    border: 0  !important;
+    font-weight: 450!important;
+    font-size: 0.85rem!important;
+}
+
+.unit-water{
+    height:50px!important;
+    background-color: #2079ce20!important;
+}
+
+.unit-water-solution{
+    height:70px!important;
+    background-color: #2079ce20!important;
+    width:100px!important;
+    font-size: 1.8rem!important;
+}
+
+.btn {
+    height: 52px;
+    background-color: #2079ce!important;
+    border-radius: 0!important;
+    color:#f9f9f9!important;
+}
+.unit-oil-solution, .unit-oil, .input-oil-solution, .input-oil {
+    background-color: #b2761c20!important;
+    height:50px!important;
+}
+.unit-oil-solution{
+    background-color: #b2761c20!important;
+    height:70px!important;
+    width:100px!important;
+    font-size: 1.8rem!important;
+}
+.input-oil-solution{
+    background-color: #b2761c20!important;
+    height:70px!important;
+    border: 0 1px 0 0 !important;
+    font-size: 2.5rem!important;
+}
+.btn-oil {
+    background-color: #b2761c!important;
+}
+
+.page-link{
+    background-color: #cccccc20!important;
+    color: #2079ce!important;
+    font-weight:bold!important;
+    border:1px solid #fff!important;
+}
+
+.page-link-active{
+    background-color: #2079ce!important;
+    color: #f9f9f9!important;
+    font-weight:bold!important;
+    padding: 15px;
+    border:1px solid #fff!important;
+}

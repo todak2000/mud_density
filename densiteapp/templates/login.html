@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#000000" />
+        <meta
+        name="Deniste"
+        content="AI powered mud density prediction software for HTHP wells "
+        />
+        {% load static %}
+        <link href="{% static 'css/login.css' %}" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>  -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">   
+        <!-- <link href="https://fonts.googleapis.com/css?family=Orbitron:900&display=swap" rel="stylesheet">  -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Kulim+Park|Satisfy&display=swap" rel="stylesheet">  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Densite</title>
+    <body>
+        <div class="row main-page">
+            <div class="col-6 image-side">
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-6 col-md-6 pt-10 text-center">
+                        <img src="{% static 'images/logo_main.svg' %}" class="logo" alt="Logout-logo" />
+                        <p class="motto">AI powered mud density prediction software for HTHP wells</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 form-side">
+                {% if error == "0" %}
+                    <div class='text-center alert alert-info' id="message_div">{{message}} </div>
+                {% else %}
+                    <div class='text-center text-danger' id="message_div">{{message}}</div>
+                {% endif %}
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-6 col-md-5 pt-10">
+                      <div class="card text-center">
+                        <div class="card-body">
+                          <form class="form-signin" action="{% url 'loginapi' %}" method="POST">
+                            {% csrf_token %}
+                            <input type="text" class="form-control box" placeholder="Email/Login ID" name="email" required autofocus>
+                            <input type="password" class="form-control box" placeholder="Password" name="password" required>
+                            <button class="btn btn-lg btn-block mb-1" type="submit">Login</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var message_ele = document.getElementById("message_div");
+        setTimeout(function(){ 
+            message_ele.style.display = "none"; 
+        }, 3000);
+    </script>
+</html>

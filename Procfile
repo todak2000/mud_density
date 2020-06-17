@@ -1,0 +1,1 @@
+web: gunicorn densite.wsgi --log-file -
